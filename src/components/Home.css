@@ -1,0 +1,1186 @@
+/* ========================main css - start=================================== */
+
+main .bgSection {
+    background-image: url('../../src/image/background.jpg');
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(1px);
+
+}
+
+main .upperSection {
+    background: #06a763;
+    position: absolute;
+    left: 10%;
+    top: 100px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+main .firstSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+}
+
+main .firstSection .leftSection {
+    font-size: 2.6rem;
+    width: 50%;
+}
+
+main .leftSection .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+main .firstSection .leftSection .buttons .btn {
+    padding: 12px;
+    background-color: #1e2167;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+main .firstSection .leftSection .btn:hover {
+    background-color: #0e0e1a;
+    transition: background-color 1s ease;
+}
+
+main .firstSection .leftSection .fa-download {
+    margin: 0 10px;
+}
+
+main .firstSection .leftSection .fa-github {
+    margin: 0 10px;
+}
+
+main .firstSection .rightSection img {
+    width: 220px;
+    border-bottom-left-radius: 10rem;
+    filter: drop-shadow(2px 4px 6px black);
+    margin: 50px 0;
+    cursor: pointer;
+}
+
+.leftSection .textName {
+    color: rgb(58 94 91);
+}
+
+.leftSection #element {
+    color: rgb(58 94 91);
+}
+
+/* ========================main css - end=================================== */
+/* ========================skill css - start=================================== */
+
+.skills {
+    margin-top: 18rem;
+}
+
+.skills .title {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skills .title img {
+    width: 40px;
+    cursor: pointer;
+}
+
+.skills .title h2 {
+    align-items: center;
+    color: rgb(58 94 91);
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.skills .row {
+    background-color: #06a763;
+    margin: 1rem auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 0.2rem;
+    grid-column-gap: 2rem;
+    padding: 40px 20px;
+}
+
+.skills .item {
+    padding: 0.5rem 0;
+    margin: 0.3rem 0;
+}
+
+.skills .item-text {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+}
+
+.skills .item-text span:last-child {
+    position: absolute;
+}
+
+.skills .item-text .w-90 {
+    margin-left: 85%;
+}
+
+.skills .item-text .w-85 {
+    margin-left: 80%;
+}
+
+.skills .item-text .w-80 {
+    margin-left: 75%;
+}
+
+.skills .item-text .w-70 {
+    margin-left: 60%;
+}
+
+.skills .item-text .w-90 {
+    margin-left: 85%;
+}
+
+.progress {
+
+    margin: 0.8rem 0;
+    border-radius: 10px;
+    height: 6px;
+    width: 100%;
+    background-color: #37785d;
+    overflow: hidden;
+}
+
+.progress-bar {
+
+    background-color: #fff;
+    height: 100%;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-70 {
+    width: 65%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+/* ========================skill css - end=================================== */
+/* ========================education css - start=================================== */
+
+.education {
+    /* background-color: red; */
+    max-width: 80%;
+    margin: 80px auto;
+}
+
+.education .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 15px auto;
+}
+
+.education .timeline .container {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+    z-index: 3;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+@keyframes movedown {
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.education .timeline .container:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.education .timeline .container:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.education .timeline .container:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.education .timeline .container:nth-child(4) {
+    animation-delay: 3s;
+}
+
+.education .timeline .container .text-box {
+    padding: 20px 30px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    color: black;
+}
+
+.education .timeline .left-container {
+    left: 0;
+}
+
+.education .timeline .right-container {
+    left: 50%;
+}
+
+.education .timeline .left-container .icon {
+    position: fixed;
+    right: -22px;
+    z-index: 10;
+    background: #06a763;
+    padding: 4px;
+    border-radius: 40%;
+}
+
+.education .timeline .right-container .right-icon {
+    position: fixed;
+    left: -22px;
+    z-index: 10;
+    background: #06a763;
+    padding: 4px;
+    border-radius: 40%;
+}
+
+.education .timeline .container i {
+    font-size: 30px;
+}
+
+/* .education .timeline .icon {
+    position: fixed;
+    right: -22px;
+    z-index: 10;
+    background: #06a763;
+    padding: 4px;
+    border-radius: 40%;
+} */
+
+.education .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: #97dbbe;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 1;
+    animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+.education .timeline .container .text-box h2 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.education .timeline .container .text-box .left-container-arrow {
+    height: 0;
+    /* background-color: red; */
+    width: 0;
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #fff;
+    right: -15px;
+}
+
+.education .timeline .container .text-box .right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #fff;
+    left: -15px;
+}
+
+.education .title {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.education .title img {
+    width: 40px;
+    cursor: pointer;
+}
+
+.education .title h2 {
+    align-items: center;
+    color: rgb(58 94 91);
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* ========================education css - end=================================== */
+/* ========================project css - start=================================== */
+.projects .title {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.projects .title img {
+    width: 40px;
+    cursor: pointer;
+}
+
+.projects .title h2 {
+    align-items: center;
+    color: rgb(58 94 91);
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.projects {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.projects .projects-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.projects .projects-card a {
+    text-decoration: none;
+    color: #1a1818;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.projects .projects-card .card {
+    filter: drop-shadow(2px 0px 6px black);
+}
+
+.projects .projects-card .card::before {
+    content: '';
+
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    height: 0%;
+    border-radius: 0.5rem;
+}
+
+.projects .projects-card .card:hover::before {
+    height: 98%;
+    content: "";
+    transition: height 0.7s ease;
+}
+
+
+.projects .card img {
+    width: 30rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+/* ========================project css - end=================================== */
+/* ========================interst css - start=================================== */
+
+.interests .title {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.interests .title img {
+    width: 40px;
+    cursor: pointer;
+}
+
+.interests .title h2 {
+    align-items: center;
+    color: rgb(58 94 91);
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.interests {
+    width: 80%;
+    margin: 50px auto;
+
+}
+
+.interests .para {
+    /* width: 80%;
+    margin: 0 auto; */
+    cursor: pointer;
+    background-color: #fff;
+    padding: 50px;
+    margin: 0 25px;
+}
+
+.interests .para p {
+    color: rgb(126, 124, 124);
+    cursor: pointer;
+}
+
+.interests .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.interests .cards .card {
+    background-color: #fff;
+    width: 10.7rem;
+    height: 9rem;
+    /* margin: 10px; */
+    cursor: pointer;
+    border-bottom: 1px solid #06a763;
+    border-top: 1px solid #06a763;
+    text-align: center;
+
+    padding: 4%;
+}
+
+.interests .cards .card h4 {
+    color: #06a763;
+    font-weight: 300;
+}
+
+
+.interests .cards .card i {
+    font-size: 40px;
+    overflow: hidden;
+    color: #06a763;
+}
+
+.interests .cards .card-green {
+    background-color: #06a763;
+}
+
+
+.interests .cards .card-green i {
+    font-size: 40px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.interests .cards .card-green h4 {
+    color: #fff;
+}
+
+/* ========================interest css - end=================================== */
+/* ========================contact css - start=================================== */
+
+.contact {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.contact .title {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.contact .title img {
+    width: 40px;
+    cursor: pointer;
+}
+
+.contact .title h2 {
+    align-items: center;
+    color: rgb(58 94 91);
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.contact .contactForm {
+    width: 50%;
+    background-color: #fff;
+    filter: drop-shadow(2px 4px 6px black);
+    margin: 5% auto;
+    padding: 20px 0;
+}
+
+.contact .contactForm form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.contact .contactForm form input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 0.5rem;
+    border: 0.5px solid gray;
+
+}
+
+.contact .contactForm form input:hover:nth-child(1) {
+    filter: drop-shadow(1px 0px 2px #088a54);
+    outline: none;
+}
+
+.contact .contactForm form input:hover:nth-child(2) {
+    filter: drop-shadow(1px 0px 2px #088a54);
+    outline: none;
+}
+
+.contact .contactForm form input:hover:nth-child(3) {
+    filter: drop-shadow(1px 0px 2px #088a54);
+    outline: none;
+}
+
+
+.contact .contactForm form textarea {
+    width: 80%;
+    padding: 10px;
+    border-radius: 0.5rem;
+    border: 0.5px solid gray;
+}
+
+.contact .contactForm form textarea:hover {
+    filter: drop-shadow(1px 0px 2px #088a54);
+    outline: none;
+}
+
+.contact form .btn {
+    width: 100px;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: #06a763;
+    color: #fff;
+    border: none;
+    margin: 10px 50px;
+    border-radius: 0.5rem;
+}
+
+.contact form .btn:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+
+
+/* ========================contact css - end=================================== */
+/*====================================Media Query- Start ================================*/
+
+@media only screen and (max-width: 850px) {
+
+    /* ========================main css resp- start=================================== */
+
+    main .upperSection .firstSection {
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: center;
+
+    }
+
+    main .upperSection .firstSection .leftSection {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    main .upperSection .firstSection .rightSection img {
+        margin: 10px 0;
+        width: 10rem;
+        border-radius: 5px;
+
+    }
+
+    main .firstSection .leftSection .buttons {
+        margin-top: 10px;
+    }
+
+    main .firstSection .leftSection .buttons .btn {
+        font-size: 15px;
+    }
+
+    /* ========================main css resp- end=================================== */
+    /* ========================skill css resp- end=================================== */
+
+    .skills {
+        margin-top: 22rem;
+    }
+
+    .skills .row {
+        margin: 0.5rem auto;
+        width: 44%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row-gap: 0.2rem;
+    }
+
+    .skills .item-text {
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+    /* ========================skill css resp- end=================================== */
+    /* ========================project css resp- start=================================== */
+
+    .projects .card img {
+        width: 20rem;
+    }
+
+    .projects .projects-card a{
+        font-size: 13px;
+    }
+
+    /* ========================project css resp- end=================================== */
+    /* ========================education css resp- start=================================== */
+
+    .education {
+        /* background-color: red; */
+        margin: 40px auto;
+    }
+
+    .education .timeline .left-container .icon {
+        display: none;
+    }
+
+    .education .timeline .right-container .right-icon {
+        /* left: 8px; */
+        display: none;
+    }
+
+    .education .timeline {
+        margin: 50px auto;
+    }
+
+    .education .timeline::after {
+        left: 31px;
+    }
+
+    .education .timeline .container {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+
+    .education .timeline .container .text-box {
+        font-size: 10px;
+        padding: 15px 20px;
+        overflow: scroll;
+    }
+
+    .education .timeline .container .text-box small {
+        margin-bottom: 10px;
+    }
+
+    .education .timeline .right-container {
+        left: 0;
+    }
+
+    .education .timeline .right-container img,
+    .education .timeline .left-container img {
+        left: 10px;
+    }
+
+    .education .timeline .container .text-box .right-container-arrow,
+    .education .timeline .container .text-box .left-container-arrow {
+        border-right: 15px solid #fff;
+        border-left: 0;
+        left: -15px;
+    }
+
+    /* ========================education css resp- end=================================== */
+    /* ========================interest css resp- start=================================== */
+
+    .interests {
+        width: 80%;
+        margin: 50px auto;
+
+    }
+
+    .interests .para {
+        cursor: pointer;
+        background-color: #fff;
+        padding: 30px;
+        margin: 0 25px;
+    }
+
+    .interests .para p {
+        font-size: 12px;
+    }
+
+    .interests .cards .card {
+        background-color: #fff;
+        width: 7.7rem;
+        height: 7rem;
+        /* margin: 10px; */
+        cursor: pointer;
+        border-bottom: 1px solid #06a763;
+        border-top: 1px solid #06a763;
+        text-align: center;
+        padding: 2%;
+    }
+
+
+    .interests .cards .card h4 {
+        color: #06a763;
+        font-weight: 300;
+    }
+
+
+    .interests .cards .card i {
+        font-size: 30px;
+        overflow: hidden;
+        color: #06a763;
+    }
+
+    .interests .cards .card-green {
+        background-color: #06a763;
+    }
+
+
+    .interests .cards .card-green i {
+        font-size: 30px;
+        overflow: hidden;
+        color: #fff;
+    }
+
+    .interests .cards .card-green h4 {
+        color: #fff;
+    }
+
+    /* ========================interest css resp- end=================================== */
+    /* ========================contact css resp- start=================================== */
+
+    .contact {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .contact .contactForm {
+        width: 90%;
+        background-color: #fff;
+        filter: drop-shadow(2px 4px 6px black);
+        margin: 5% auto;
+        padding: 20px 0;
+    }
+
+    .contact .contactForm form input {
+        width: 80%;
+        padding: 5px;
+        border-radius: 0.5rem;
+        border: 0.5px solid gray;
+
+    }
+
+    .contact .contactForm form input:hover:nth-child(1) {
+        filter: drop-shadow(1px 0px 2px #088a54);
+        outline: none;
+    }
+
+    .contact .contactForm form input:hover:nth-child(2) {
+        filter: drop-shadow(1px 0px 2px #088a54);
+        outline: none;
+    }
+
+    .contact .contactForm form input:hover:nth-child(3) {
+        filter: drop-shadow(1px 0px 2px #088a54);
+        outline: none;
+    }
+
+    .contact .contactForm form textarea {
+        width: 80%;
+        padding: 5px;
+        border-radius: 0.5rem;
+        border: 0.5px solid gray;
+        filter: drop-shadow(0px 0px 1px green);
+    }
+
+    .contact .contactForm form textarea:hover {
+        filter: drop-shadow(1px 0px 2px #088a54);
+        outline: none;
+    }
+
+    .contact form .btn {
+        width: 80px;
+        padding: 8px 25px;
+        cursor: pointer;
+        background-color: #06a763;
+        color: #fff;
+        border: none;
+        margin: 8px 40px;
+        border-radius: 0.5rem;
+    }
+
+    .contact form .btn:hover {
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 1s ease;
+    }
+
+    /* ========================contact css resp- end=================================== */
+}
+
+@media only screen and (max-width: 250px) {
+
+    /* ========================main css resp- start=================================== */
+
+    main .upperSection .firstSection .leftSection {
+        font-size: 0.7rem;
+        margin-bottom: 10px;
+    }
+
+    main .upperSection .firstSection .rightSection img {
+        margin: 10px 0;
+        width: 130px;
+        border-radius: 5px;
+    }
+
+    main .leftSection .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        margin-top: 10px;
+    }
+
+    main .firstSection .leftSection .buttons .btn {
+        font-size: 7px;
+
+    }
+
+    /* ========================main css resp- end=================================== */
+    /* ========================skill css resp- start=================================== */
+    .skills {
+        margin-top: 18rem;
+    }
+
+    .skills .title img {
+        width: 30px;
+    }
+
+    .skills .title h2 {
+        font-size: 20px;
+    }
+
+
+    .skills .row {
+        width: 55%;
+
+    }
+
+    .skills .item-text {
+        font-weight: 300;
+        font-size: 0.5rem;
+    }
+
+    /* ========================skill css resp- end=================================== */
+    /* ========================education css resp- start=================================== */
+
+    .education .title img {
+        width: 30px;
+    }
+
+    .education .title h2 {
+        font-size: 20px;
+    }
+
+
+    .education .timeline .container .text-box {
+        font-size: 9px;
+        padding: 10px 15px;
+        overflow: scroll;
+    }
+
+    .education .timeline .left-container .icon {
+        display: none;
+    }
+
+    .education .timeline .right-container .right-icon {
+        /* left: 8px; */
+        display: none;
+    }
+
+    .education .timeline {
+        margin: 50px auto;
+    }
+
+    .education .timeline::after {
+        left: 31px;
+    }
+
+    .education .timeline .container {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 10px;
+    }
+
+    .education .timeline .container .text-box {
+        font-size: 10px;
+        padding: 15px 20px;
+        overflow: scroll;
+    }
+
+    .education .timeline .container .text-box small {
+        margin-bottom: 10px;
+    }
+
+    .education .timeline .right-container {
+        left: 0;
+    }
+
+    .education .timeline .right-container img,
+    .education .timeline .left-container img {
+        left: 10px;
+    }
+
+    .education .timeline .container .text-box .right-container-arrow,
+    .education .timeline .container .text-box .left-container-arrow {
+        border-right: 15px solid #fff;
+        border-left: 0;
+        left: -15px;
+    }
+
+    /* ========================education css resp- end=================================== */
+    /* ========================project css resp- start=================================== */
+    .projects .title img {
+        width: 30px;
+    }
+
+    .projects .title h2 {
+        font-size: 20px;
+    }
+
+    .projects .card img {
+        width: 12rem;
+    }
+
+    .projects .projects-card a{
+        font-size: 10px;
+    }
+
+    /* ========================project css resp- end=================================== */
+    /* ========================interest css resp- start=================================== */
+    .interests .title img {
+        width: 30px;
+    }
+
+    .interests .title h2 {
+        font-size: 20px;
+    }
+
+
+    .interests {
+        width: 100%;
+        margin: 40px auto;
+
+    }
+
+    .interests .para {
+        cursor: pointer;
+        background-color: #fff;
+        padding: 20px;
+        margin: 0 25px;
+        overflow: scroll;
+        height: 50%;
+    }
+
+    .interests .para p {
+        font-size: 10px;
+    }
+
+    .interests .cards .card {
+        background-color: #fff;
+        width: 5.7rem;
+        height: 5rem;
+        /* margin: 10px; */
+        cursor: pointer;
+        border-bottom: 1px solid #06a763;
+        border-top: 1px solid #06a763;
+        text-align: center;
+        padding: 2%;
+    }
+
+    .interests .cards .card h4 {
+        color: #06a763;
+        font-weight: 300;
+    }
+
+    .interests .cards .card i {
+        font-size: 25px;
+        overflow: hidden;
+        color: #06a763;
+    }
+
+    .interests .cards .card-green {
+        background-color: #06a763;
+    }
+
+    .interests .cards .card-green i {
+        font-size: 25px;
+        overflow: hidden;
+        color: #fff;
+    }
+
+    .interests .cards .card-green h4 {
+        color: #fff;
+    }
+
+
+    /* ========================interest css resp- end=================================== */
+    /* ========================contact css resp- start=================================== */
+    .contact .title img {
+        width: 30px;
+    }
+
+    .contact .title h2 {
+        font-size: 20px;
+    }
+
+    .contact {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .contact .contactForm {
+        width: 90%;
+        background-color: #fff;
+        filter: drop-shadow(2px 4px 6px black);
+        margin: 5% auto;
+        padding: 20px 0;
+    }
+
+    .contact .contactForm form input {
+        width: 90%;
+        padding: 5px;
+        border-radius: 0.5rem;
+        border: 0.5px solid gray;
+    }
+
+    .contact .contactForm form input:hover:nth-child(1) {
+        filter: drop-shadow(1px 0px 2px #088a54);
+        outline: none;
+    }
+
+    .contact .contactForm form input:hover:nth-child(2) {
+        filter: drop-shadow(1px 0px 2px #088a54);
+        outline: none;
+    }
+
+    .contact .contactForm form input:hover:nth-child(3) {
+        filter: drop-shadow(1px 0px 2px #088a54);
+        outline: none;
+    }
+
+    .contact .contactForm form textarea {
+        width: 90%;
+        padding: 5px;
+        border-radius: 0.5rem;
+        border: 0.5px solid gray;
+    }
+
+    .contact .contactForm form textarea:hover {
+        filter: drop-shadow(1px 0px 2px #088a54);
+        outline: none;
+    }
+
+    .contact form .btn {
+        width: 70px;
+        padding: 6px 20px;
+        cursor: pointer;
+        background-color: #06a763;
+        color: #fff;
+        border: none;
+        margin: 5px 20px;
+        border-radius: 0.5rem;
+    }
+
+    .contact form .btn:hover {
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 1s ease;
+    }
+
+    /* ========================contact css resp- end=================================== */
+}
+
+
+/*====================================Media Query- End ================================*/
