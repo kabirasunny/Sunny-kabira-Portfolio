@@ -27,7 +27,7 @@ const Home = (props) => {
         //     text:data.textarea
         // }
 
-        const userDetails = [data.fname,data.lname,data.email,data.textarea];
+        const userDetails = [data.fname, data.lname, data.email, data.textarea];
         console.log(userDetails[0])
 
     }
@@ -46,7 +46,7 @@ const Home = (props) => {
                         <div className="leftSection">
                             Hi, My name is <span className="textName">Sunny</span>
 
-                            <div>and i am a Java Developer passionate</div>
+                            <div>and I am a Java Developer passionate</div>
                             <span id="element" >{props.type}</span><Cursor />
                             <div className="buttons">
                                 <a href='./IMG/Sunny kabira Technical Resume.pdf' className="btn" download><i className="fa-solid fa-download"></i>Resume</a>
@@ -219,13 +219,24 @@ const Home = (props) => {
                     <h2 id='project'>Projects</h2>
                 </div>
                 <div className="projects-card">
-                    <a href='https://github.com/kabirasunny/CarWash-Project.git'>CarWash - Project<div className="card">
-                        <img src="./IMG/carwash-thumbnail.png" alt="project picture" />
-                    </div></a>
 
-                    <a href='https://frozenyourshop.netlify.app/' target='_blank'>Frozen Yogurt Shop - Website<div className="card">
-                        <img src="./IMG/FrozenYogurtShop-thumbnail.png" alt="project picture" />
-                    </div></a>
+                    <div><div className="projectName">
+                        <p>CarWash - Project</p>
+                    </div><div className="card">
+                            <img src="./IMG/carwash-thumbnail.png" alt="project picture" />
+                        </div><div className="projectButtons">
+                            <a href="/" target='_blank' className="btn">View <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/kabirasunny/CarWash-Project.git" target='_blank' className="btn">Source <i className="fa-solid fa-code"></i></a>
+                        </div></div>
+
+                    <div ><div className="projectName">
+                        <p>Frozen Yogurt Shop - Website</p>
+                    </div><div className="card">
+                            <img src="./IMG/FrozenYogurtShop-thumbnail.png" alt="project picture" />
+                        </div><div className="projectButtons">
+                            <a href="https://frozenyourshop.netlify.app/" target='_blank' className="btn">View <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/kabirasunny/Frozen-website.git" target='_blank' className="btn">Source <i className="fa-solid fa-code"></i></a>
+                        </div></div>
                 </div>
             </section>
             {/* ========================project section- end=================================== */}
