@@ -420,6 +420,37 @@ main .firstSection .rightSection img {
     text-transform: uppercase;
 }
 
+.projects .projects-card .projectName p{
+    color: #000;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.projects .projects-card .projectButtons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.projects .projects-card .projectButtons .btn {
+    border-radius: 0.5rem;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin: 10px;
+    background: #25c35d;
+    color: #fff;
+}
+
+.projects .projects-card .projectButtons i{
+    font-size: 14px;
+    padding: 0 5px;
+}
+
+.projects .projects-card .projectButtons .btn:hover{
+    background: #000;
+    transition: background 1s ease;
+}
+
 .projects .projects-card .card {
     filter: drop-shadow(2px 0px 6px black);
 }
@@ -706,8 +737,22 @@ main .firstSection .rightSection img {
         width: 20rem;
     }
 
+    .projects .projects-card .projectName p{
+        padding: 5px 0;
+        font-size: 12px; 
+    }
+
+    .projects .projects-card .projectButtons i{
+        font-size: 14px;
+        padding: 0 5px;
+    }
+
+    .projects .projects-card .projectButtons .btn {
+        padding: 5px 15px;
+    }
+
     .projects .projects-card a {
-        font-size: 13px;
+        font-size: 10px;
     }
 
     /* ========================project css resp- end=================================== */
@@ -1069,10 +1114,24 @@ main .firstSection .rightSection img {
     .projects .card img {
         width: 12rem;
     }
+    .projects .projects-card .projectName p{
+        padding: 5px 0;
+        font-size: 8px; 
+    }
+
+    .projects .projects-card .projectButtons i{
+        font-size: 10px;
+        padding: 0 5px;
+    }
+
+    .projects .projects-card .projectButtons .btn {
+        padding: 8px 10px;
+    }
 
     .projects .projects-card a {
-        font-size: 10px;
+        font-size: 8px;
     }
+
 
     /* ========================project css resp- end=================================== */
     /* ========================interest css resp- start=================================== */
