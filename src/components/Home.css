@@ -86,7 +86,7 @@ main .firstSection .rightSection img {
 /* ========================skill css - start=================================== */
 
 .skills {
-    margin-top: 18rem;
+    margin-top: 30rem;
 }
 
 .skills .title {
@@ -692,6 +692,7 @@ main .firstSection .rightSection img {
     main .upperSection .firstSection .leftSection {
         font-size: 1.1rem;
         margin-bottom: 10px;
+        width: 95%;
     }
 
     main .upperSection .firstSection .rightSection img {
