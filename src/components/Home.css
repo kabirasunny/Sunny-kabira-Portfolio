@@ -31,7 +31,7 @@ main .firstSection {
 
 main .firstSection .leftSection {
     font-size: 2.6rem;
-    width: 50%;
+    width: 90%;
 }
 
 main .leftSection .buttons {
@@ -117,6 +117,7 @@ main .firstSection .rightSection img {
     grid-row-gap: 0.2rem;
     grid-column-gap: 2rem;
     padding: 40px 20px;
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 .skills .item {
@@ -663,7 +664,8 @@ main .firstSection .rightSection img {
 
     main .upperSection .firstSection .rightSection img {
         margin: 10px 0;
-        width: 10rem;
+        width: 8rem;
+        height: 10rem;
         border-radius: 5px;
 
     }
@@ -680,7 +682,7 @@ main .firstSection .rightSection img {
     /* ========================skill css resp- end=================================== */
 
     .skills {
-        margin-top: 22rem;
+        margin-top: 16rem;
     }
 
     .skills .row {
@@ -703,7 +705,7 @@ main .firstSection .rightSection img {
         width: 20rem;
     }
 
-    .projects .projects-card a{
+    .projects .projects-card a {
         font-size: 13px;
     }
 
@@ -740,12 +742,13 @@ main .firstSection .rightSection img {
 
     .education .timeline .container .text-box {
         font-size: 10px;
-        padding: 15px 20px;
+        padding: 10px 10px;
         overflow: scroll;
     }
 
     .education .timeline .container .text-box small {
         margin-bottom: 10px;
+        font-size: 12px;
     }
 
     .education .timeline .right-container {
@@ -776,12 +779,17 @@ main .firstSection .rightSection img {
     .interests .para {
         cursor: pointer;
         background-color: #fff;
-        padding: 30px;
+        padding: 10px;
         margin: 0 25px;
+        filter: drop-shadow(2px 4px 6px black);
     }
 
     .interests .para p {
         font-size: 12px;
+    }
+
+    .interests .cards {
+        filter: drop-shadow(2px 4px 6px black);
     }
 
     .interests .cards .card {
@@ -793,7 +801,7 @@ main .firstSection .rightSection img {
         border-bottom: 1px solid #06a763;
         border-top: 1px solid #06a763;
         text-align: center;
-        padding: 2%;
+        padding: 6%;
     }
 
 
@@ -896,6 +904,30 @@ main .firstSection .rightSection img {
     }
 
     /* ========================contact css resp- end=================================== */
+
+    /* ========================footer css resp- start=================================== */
+
+    footer .footer {
+        justify-content: center;
+        padding: 1rem 1rem;
+    }
+
+    footer .footer .footer-first h3 {
+        font-size: 20px;
+    }
+
+    footer .footer .footer-third i {
+        font-size: 25px;
+    }
+
+    footer .footer-rights {
+        text-align: center;
+        color: gray;
+        padding: 15px 0px;
+        font-size: 12px;
+    }
+
+    /* ========================footer css resp- end=================================== */
 }
 
 @media only screen and (max-width: 250px) {
@@ -909,13 +941,14 @@ main .firstSection .rightSection img {
 
     main .upperSection .firstSection .rightSection img {
         margin: 10px 0;
-        width: 130px;
+        width: 120px;
+        height: 130px;
         border-radius: 5px;
     }
 
     main .leftSection .buttons {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         row-gap: 10px;
         margin-top: 10px;
     }
@@ -928,7 +961,7 @@ main .firstSection .rightSection img {
     /* ========================main css resp- end=================================== */
     /* ========================skill css resp- start=================================== */
     .skills {
-        margin-top: 18rem;
+        margin-top: 8rem;
     }
 
     .skills .title img {
@@ -961,11 +994,12 @@ main .firstSection .rightSection img {
         font-size: 20px;
     }
 
-
-    .education .timeline .container .text-box {
+    .education .timeline .container .text-box h2 {
         font-size: 9px;
-        padding: 10px 15px;
-        overflow: scroll;
+    }
+
+    .education .timeline .container .text-box p {
+        font-size: 8px;
     }
 
     .education .timeline .left-container .icon {
@@ -992,8 +1026,8 @@ main .firstSection .rightSection img {
     }
 
     .education .timeline .container .text-box {
-        font-size: 10px;
-        padding: 15px 20px;
+        font-size: 12px;
+        padding: 10px 10px;
         overflow: scroll;
     }
 
@@ -1031,7 +1065,7 @@ main .firstSection .rightSection img {
         width: 12rem;
     }
 
-    .projects .projects-card a{
+    .projects .projects-card a {
         font-size: 10px;
     }
 
@@ -1055,7 +1089,7 @@ main .firstSection .rightSection img {
     .interests .para {
         cursor: pointer;
         background-color: #fff;
-        padding: 20px;
+        padding: 10px;
         margin: 0 25px;
         overflow: scroll;
         height: 50%;
@@ -1074,16 +1108,17 @@ main .firstSection .rightSection img {
         border-bottom: 1px solid #06a763;
         border-top: 1px solid #06a763;
         text-align: center;
-        padding: 2%;
+        padding: 6%;
     }
 
     .interests .cards .card h4 {
         color: #06a763;
         font-weight: 300;
+        font-size: 12px;
     }
 
     .interests .cards .card i {
-        font-size: 25px;
+        font-size: 20px;
         overflow: hidden;
         color: #06a763;
     }
@@ -1178,6 +1213,30 @@ main .firstSection .rightSection img {
         cursor: pointer;
         transition: background-color 1s ease;
     }
+
+    /* ========================footer css resp- start=================================== */
+
+    footer .footer {
+        justify-content: center;
+        padding: 1rem 1rem;
+    }
+
+    footer .footer .footer-first h3 {
+        font-size: 14px;
+    }
+
+    footer .footer .footer-third i {
+        font-size: 20px;
+    }
+
+    footer .footer-rights {
+        text-align: center;
+        color: gray;
+        padding: 15px 0px;
+        font-size: 10px;
+    }
+
+    /* ========================footer css resp- end=================================== */
 
     /* ========================contact css resp- end=================================== */
 }
