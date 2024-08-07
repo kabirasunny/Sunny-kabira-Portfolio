@@ -54,7 +54,7 @@ const Home = (props) => {
                             </div>
                         </div>
                         <div className="rightSection">
-                            <img src="./IMG/sunnybg.JPG" alt="Profile picture" />
+                            <img src=".\IMG\sunnybg.jpg" alt="Profile picture" />
                         </div>
                     </section>
                 </section>
