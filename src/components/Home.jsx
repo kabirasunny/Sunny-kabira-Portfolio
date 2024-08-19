@@ -67,8 +67,8 @@ const Home = (props) => {
                     <img src="./IMG/mixer.png" alt="skill icon" />
                     <h2 id='skill'>Skills</h2>
                 </div>
-                <div className="row">
-                    <div className="item">
+                <div className="skillBox">
+                    {/* <div className="item">
                         <div className="item-text">
                             <span>Java</span>
                             <span className="w-90">90%</span>
@@ -156,7 +156,76 @@ const Home = (props) => {
                         <div className="progress">
                             <div className="progress-bar w-70"></div>
                         </div>
+                    </div> */}
+                    <div className="sbJ">
+                        <h1 className="skillBoxTitle">Language</h1>
+                        <div>
+                            <div className="sk"><img src="./IMG/java.png" alt="" />Core Java</div>
+                            <div className="sk"><img src="./IMG/java.png" alt="" />J2EE</div>
+                            <div className="skLine"><div></div></div>
+                        </div>
                     </div>
+
+                    <div className="sbJf">
+                        <h1 className="skillBoxTitle">Java Framework</h1>
+                        <div>
+                            <div className="sk"><img src="./IMG/hibernate.png" alt="" />Hibernate</div>
+                            <div className="sk"><img src="./IMG/servlet.png" alt="" />Servlet API</div>
+                            <div className="sk"><img src="./IMG/springFramework.png" alt="" />Spring Framework</div>
+                            <div className="sk"><img src="./IMG/springFramework.png" alt="" />Spring MVC</div>
+                            <div className="sk"><img src="./IMG/springFramework.png" alt="" />Spring Boot</div>
+                            <div className="sk"><img src="./IMG/springFramework.png" alt="" />Spring Security</div>
+                            <div className="sk"><img src="./IMG/springThymeleaf.png" alt="" />Spring Thymeleaf</div>
+                            <div className="skLine"><div></div></div>
+                        </div>
+                    </div>
+
+                    <div className="sbWt">
+                        <h1 className="skillBoxTitle">Web Technologies</h1>
+                        <div>
+                            <div className="sk"><img src="./IMG/html.png" alt="" />HTML</div>
+                            <div className="sk"><img src="./IMG/css.png" alt="" />CSS</div>
+                            <div className="sk"><img src="./IMG/javascript.png" alt="" />JavaScript</div>
+                            <div className="skLine"><div></div></div>
+                        </div>
+                    </div>
+
+
+                    <div className="sbJl">
+                        <h1 className="skillBoxTitle">JavaScript Library</h1>
+                        <div>
+                            <div className="sk"><img src="./IMG/react.png" alt="" />Reactjs</div>
+                            <div className="sk"><img src="./IMG/jquery.png" alt="" />JQuery</div>
+                            <div className="skLine"><div></div></div>
+                        </div>
+                    </div>
+
+
+                    <div className="sbDb">
+                        <h1 className="skillBoxTitle">Database</h1>
+                        <div><div className="sk"><img src="./IMG/mysql.png" alt="" />MySQL</div></div>
+                        <div className="skLine"><div></div></div>
+                    </div>
+
+                    <div className="sbPf">
+                        <h1 className="skillBoxTitle">Platforms</h1>
+                        <div>
+                            <div className="sk"><img src="./IMG/eclipse.png" alt="" />Eclipse</div>
+                            <div className="sk"><img src="./IMG/sts.png" alt="" />Spring Tool Suits 4(STS)</div>
+                            <div className="sk"><img src="./IMG/vscode.png" alt="" />Visual Studio Code</div>
+                            <div className="sk"><img src="./IMG/mysqlworkbench.png" alt="" />MySQL workbench</div>
+                            <div className="skLine"><div></div></div>
+                        </div>
+                    </div>
+
+                    <div className="sbT">
+                        <h1 className="skillBoxTitle">Tools</h1>
+                        <div>
+                            <div className="sk"><img src="./IMG/mword.png" alt="" />Microsoft Word</div>
+                            <div className="sk"><img src="./IMG/excel.png" alt="" />Excel</div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
             {/* ========================skill section- end=================================== */}

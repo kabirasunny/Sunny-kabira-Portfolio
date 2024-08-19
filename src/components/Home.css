@@ -109,95 +109,97 @@ main .firstSection .rightSection img {
     cursor: pointer;
 }
 
-.skills .row {
+.skills .skillBox {
     background-color: #06a763;
     margin: 1rem auto;
-    width: 70%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 0.2rem;
-    grid-column-gap: 2rem;
+    width: 80%;
     padding: 40px 20px;
     filter: drop-shadow(2px 4px 6px black);
 }
 
-.skills .item {
-    padding: 0.5rem 0;
-    margin: 0.3rem 0;
-}
-
-.skills .item-text {
+.skills .sbJ div {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-start;
-    font-weight: 600;
-    font-size: 1rem;
-    position: relative;
+    gap: 20px;
 }
 
-.skills .item-text span:last-child {
-    position: absolute;
+
+.skills .sbJf div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
 }
 
-.skills .item-text .w-90 {
-    margin-left: 85%;
+.skills .sbWt div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
 }
 
-.skills .item-text .w-85 {
-    margin-left: 80%;
+.skills .sbJl div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
 }
 
-.skills .item-text .w-80 {
-    margin-left: 75%;
+.skills .sbDb div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
 }
 
-.skills .item-text .w-70 {
-    margin-left: 60%;
+.skills .sbPf div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
 }
 
-.skills .item-text .w-90 {
-    margin-left: 85%;
+.skills .sbT div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
 }
 
-.progress {
-
-    margin: 0.8rem 0;
-    border-radius: 10px;
-    height: 6px;
-    width: 100%;
-    background-color: #37785d;
-    overflow: hidden;
+.skills .sk img {
+    width: 25px;
 }
 
-.progress-bar {
+.skills .skillBoxTitle {
+    font-size: 25px;
+    font-weight: 300;
+}
 
+.skills .skillBox .sk {
+    background: #000;
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+
+.skills .skillBox .sk:hover{
+    color: #000;
     background-color: #fff;
-    height: 100%;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+    transition: background 1s ease;
 }
 
-.w-90 {
-    width: 90%;
-}
-
-.w-75 {
-    width: 75%;
-}
-
-.w-85 {
-    width: 85%;
-}
-
-.w-80 {
-    width: 80%;
-}
-
-.w-70 {
-    width: 65%;
-}
-
-.w-60 {
-    width: 60%;
+.skills .skillBox .skLine{
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    margin-bottom: 20px;
 }
 
 /* ========================skill css - end=================================== */
@@ -420,13 +422,13 @@ main .firstSection .rightSection img {
     text-transform: uppercase;
 }
 
-.projects .projects-card .projectName p{
+.projects .projects-card .projectName p {
     color: #000;
     padding: 5px 0;
     text-align: center;
 }
 
-.projects .projects-card .projectButtons{
+.projects .projects-card .projectButtons {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
@@ -441,12 +443,12 @@ main .firstSection .rightSection img {
     color: #fff;
 }
 
-.projects .projects-card .projectButtons i{
+.projects .projects-card .projectButtons i {
     font-size: 14px;
     padding: 0 5px;
 }
 
-.projects .projects-card .projectButtons .btn:hover{
+.projects .projects-card .projectButtons .btn:hover {
     background: #000;
     transition: background 1s ease;
 }
@@ -726,11 +728,6 @@ main .firstSection .rightSection img {
         grid-row-gap: 0.2rem;
     }
 
-    .skills .item-text {
-        font-weight: 400;
-        font-size: 1rem;
-    }
-
     /* ========================skill css resp- end=================================== */
     /* ========================project css resp- start=================================== */
 
@@ -738,12 +735,12 @@ main .firstSection .rightSection img {
         width: 20rem;
     }
 
-    .projects .projects-card .projectName p{
+    .projects .projects-card .projectName p {
         padding: 5px 0;
-        font-size: 12px; 
+        font-size: 12px;
     }
 
-    .projects .projects-card .projectButtons i{
+    .projects .projects-card .projectButtons i {
         font-size: 14px;
         padding: 0 5px;
     }
@@ -1015,25 +1012,6 @@ main .firstSection .rightSection img {
         margin-top: 8rem;
     }
 
-    .skills .title img {
-        width: 30px;
-    }
-
-    .skills .title h2 {
-        font-size: 20px;
-    }
-
-
-    .skills .row {
-        width: 55%;
-
-    }
-
-    .skills .item-text {
-        font-weight: 300;
-        font-size: 0.5rem;
-    }
-
     /* ========================skill css resp- end=================================== */
     /* ========================education css resp- start=================================== */
 
@@ -1115,12 +1093,13 @@ main .firstSection .rightSection img {
     .projects .card img {
         width: 12rem;
     }
-    .projects .projects-card .projectName p{
+
+    .projects .projects-card .projectName p {
         padding: 5px 0;
-        font-size: 8px; 
+        font-size: 8px;
     }
 
-    .projects .projects-card .projectButtons i{
+    .projects .projects-card .projectButtons i {
         font-size: 10px;
         padding: 0 5px;
     }
